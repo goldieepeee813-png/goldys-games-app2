@@ -1,26 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Goldy’s Retro Arcade Hub</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <title>Goldy PingPong Arcade</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Goldy’s Retro Arcade Hub</h1>
-  <ul class="game-list">
-    <li><a href="https://goldieepeee813-png.github.io/escape-the-castle/" target="_blank">Escape the Castle</a></li>
-    <li><a href="https://goldieepeee813-png.github.io/goldys-tennis/" target="_blank">Goldy’s Tennis</a></li>
-    <li><a href="https://goldieepeee813-png.github.io/dino-dash/" target="_blank">Dino Dash</a></li>
-    <li><a href="https://goldieepeee813-png.github.io/goldy-the-ninja/" target="_blank">Goldy the Ninja</a></li>
-    <li><a href="https://goldieepeee813-png.github.io/goldys-pac-man/" target="_blank">Goldy’s Pac‑Man</a></li>
-    <li><a href="https://goldieepeee813-png.github.io/goldy-in-space/" target="_blank">Goldy in Space</a></li>
-    <li><a href="https://goldieepeee813-png.github.io/goldys-snake/" target="_blank">Goldy’s Snake</a></li>
-    <li><a href="https://goldieepeee813-png.github.io/temple-run/" target="_blank">Temple Run</a></li>
-    <li><a href="https://goldieepeee813-png.github.io/goldys-rackets/" target="_blank">Goldy’s Rackets</a></li>
-  </ul>
+  <div id="hud">
+    <div id="brand">GOLDY — PingPong Arcade</div>
+    <div id="mode">Mode: 1P vs AI (press M to toggle)</div>
+    <div id="score">0 : 0</div>
+  </div>
 
-  <footer>
-    <p class="signature">goldyporter</p>
-  </footer>
+  <canvas id="game" width="1280" height="720"></canvas>
+
+  <!-- Touch controls (left paddle) -->
+  <div id="controls">
+    <button id="btnUp">▲</button>
+    <button id="btnDown">▼</button>
+  </div>
+
+  <div id="hint">P1: W/S • P2: ↑/↓ • Serve/Start: Space • Toggle 1P/2P: M • Pause: P</div>
+
+  <script src="game.js"></script>
 </body>
 </html>
